@@ -1,24 +1,68 @@
-# README
+# Building with active records
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> In this project we created the model part of our rails webpage using active records commands.
 
-Things you may want to cover:
+## Code execution view:
 
-* Ruby version
+![screenshot](./assets/codess.png)
 
-* System dependencies
+## Built With
 
-* Configuration
+- Ruby on Rails
+- VsCode
+- Active Records
 
-* Database creation
+## Getting Started
 
-* Database initialization
+To get a local copy up and running follow these simple example steps:
 
-* How to run the test suite
+- Clone this repository into your local machine.
+- Run the main file by typing this in your command line:
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+  $ rails console
+  $ u = User.new(username: 'Admin', email: 'admin@admin.com', password: '123456') #This is to create a User
+  $ p = Post.new(title:'new title', body: 'New body', user_id: 1) #This is to create a post by a certain user
+  $ c = Comment.new(body: 'New body', user_id: 1,  post_id: 1) #This is to create a comment by the user
+  $ u.save
+  $ p.save
+  $ c.save
+  $ u #To check the user content
+  $ p #To check the post content
+  $ c #To check the comment content
+```
 
-* Deployment instructions
+### Validators
 
-* ...
+- Rubocop
+- Stickler
+
+## Authors
+
+👤 **Elias Castañeda**
+
+- Github: [@e71az](https://github.com/e71az)
+- Linkedin: [@e71az](https://www.linkedin.com/in/e71az/)
+- Twitter: [@e71az](https://twitter.com/e71az)
+
+👤 **Abdulaziz Ali**
+
+- Github: [@abredi](https://github.com/abredi)
+- Twitter: [@rediabdulaziz](https://twitter.com/rediabdulaziz)
+- Linkedin: [linkedin](https://www.linkedin.com/in/abdulaziz-ali-98948011a)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/e71az/micro-reddit/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
