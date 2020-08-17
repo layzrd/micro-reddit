@@ -1,4 +1,4 @@
-# rubocop:disable Layout/EndOfLine
+# rubocop:disable Layout/EndOfLine, Lint/RedundantCopDisableDirective
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
@@ -6,4 +6,4 @@ class UserTest < ActiveSupport::TestCase
   #   assert true
   # end
 end
-# rubocop:enable Layout/EndOfLine
+# rubocop:enable Layout/EndOfLine, Lint/RedundantCopDisableDirective
